@@ -1,36 +1,5 @@
-
-
-
-.quote-container {
-  text-align: center;
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-}
-
-.quote-container h1 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-}
-
-.quote {
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-bottom: 20px;
+*{
   font-family: "Moon Dance", cursive;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
- 
-  color: black;
-  border: none;
-  border-radius: 5px;
-}
 
-button:hover {
-  background-color: #45a049;
-}

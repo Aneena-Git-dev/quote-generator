@@ -26,15 +26,13 @@ const QuoteGenerator = () => {
       style={{
         backgroundColor: "black",
         height: "100vh",         
-        display: "flex",         
-        justifyContent: "center", 
-        alignItems: "center",    
+          
         overflow: "hidden",      
-      }} className=''
+      }} className='d-flex justify-content-center align-items-center'
     >
       <div 
         style={{
-          backgroundColor: "grey", 
+          backgroundColor: "smokgrey", 
           width: "500px", 
           padding: "20px",   
           borderRadius: "10px", 
@@ -42,16 +40,22 @@ const QuoteGenerator = () => {
         }}
         className="quote-container"
       >
-        <h1 className="display mb-4">Random Quote Generator</h1>
-        <div className="quote mb-4">
-          <p className="blockquote text-center">
+        <h1
+         className="display d-flex justify-content-center mb-4" style={{color:"white",fontSize:'900'}}>Random Quote Generator
+        </h1>
+        <div className="quote mb-4 " style={{color:"white",fontSize:'600'}}>
+          <p className="blockquote d-flex justify-content-center ">
             <em>"{quote}"</em>
           </p>
-          <footer className="blockquote-footer">{author}</footer>
+          <footer className="blockquote-footer d-flex justify-content-center" style={{color:'black'}} >{author}</footer>
         </div>
-        <button className="btn btn-success btn-lg" onClick={fetchQuote}>
-          Get Another Quote
-        </button>
+        <div className="d-flex justify-content-center">
+    <button 
+   
+    className="btn btn-outline-light btn-lg" onClick={fetchQuote}>
+      Get Another Quote
+    </button>
+  </div>
       </div>
     </div>
   );
